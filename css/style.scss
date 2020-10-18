@@ -1,0 +1,106 @@
+#preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    background: #fbfbfb;
+
+    img, p {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 150px;
+        height: 150px;
+    }
+
+    p {
+        text-align: center;
+        margin-top: 150px;
+        font-family: 'Frijole', cursive;
+        font-size: 18px;
+    }
+}
+  
+.visible {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .5s linear;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s .5s, opacity .5s linear;
+}
+
+
+
+
+.title {
+	text-align: center;
+	font-size: 35px;
+	font-weight: bold;
+	font-family: 'Cuprum', sans-serif;
+	margin-top: 40px;
+}
+.text {
+	font-size: 17px;
+	padding-left: 20px;
+	padding-right: 20px;
+    margin-top: 28px;
+    text-align: center;
+    font-family: 'Cuprum', sans-serif;
+}
+.between {
+	border: 2px solid #2961C1;
+    width: 60px;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.block {
+    border: 1px solid #E5E5E5;
+    transition: .3s;
+    margin-top: 30px;
+
+    &:hover {
+        box-shadow: 0px 0px 20px grey;
+        transition: .3s;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+        background: rgb(255, 65, 65);
+        font-size: 20px;
+        padding: 5px 5px 5px 5px;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        text-align: center;
+        font-family: 'Cuprum', sans-serif;
+        box-shadow: 0 5px 0 grey;
+        margin-top: -5px;
+        margin-bottom: 15px;
+        
+        &:hover {
+            text-decoration: none;
+            color: white;
+        }
+
+        &:active {
+            margin-top: -2px;
+            margin-bottom: 12px;
+            box-shadow: 0 2px 0 grey;
+        }
+    }
+}
